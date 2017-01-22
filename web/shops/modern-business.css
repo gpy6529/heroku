@@ -1,0 +1,398 @@
+/*!
+ * Start Bootstrap - Modern Business (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+ 
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* custom */
+.tagline{font-size:30px;font-weight:600;color:#000;}
+.tagline2{font-family: 'Antic Didone', serif;font-size:20px;color:#000;letter-spacing:2px;}
+.navbar-middle .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar-middle .navbar-collapse {
+    text-align: center;
+}
+.dropdown-menu {
+	min-width: 150px;
+}
+.dropdown-menu.columns-2 {
+	min-width: 300px;
+}
+.dropdown-menu.columns-3 {
+	min-width: 450px;
+}
+.dropdown-menu li a {
+	padding: 5px 15px;
+	font-weight: 300;
+}
+.multi-column{
+  background:#000;
+  color:#000;
+}
+.multi-column a:hover{
+    font-weight:bold;
+}
+.multi-column-dropdown {
+	list-style: none;
+  margin: 0px;
+  padding: 0px;
+
+}
+.multi-column-dropdown li a {
+	display: block;
+	clear: both;
+	line-height: 1.428571429;
+	color: #fff;
+	white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+	text-decoration: none;
+	color: #fff;
+	background-color: #000;
+}
+a {
+     -moz-transition: all 0.5s ease;
+     -webkit-transition: all 0.5s ease; 
+    -o-transition: all 0.5s ease;
+     transition: all 0.5s ease; 
+}
+.caret{
+    -moz-transition: all 0.5s ease;
+     -webkit-transition: all 0.5s ease; 
+    -o-transition: all 0.5s ease;
+     transition: all 0.5s ease; 
+}
+.caret:hover{
+-moz-transform: rotate(90deg);
+-webkit-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+transform: rotate(90deg);
+}
+.dropdown:hover .caret {
+-moz-transform: rotate(90deg);
+-webkit-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+transform: rotate(90deg);
+}
+ 
+
+
+/* items */
+.cart{color:#fff;background:#ffac0b;padding:10px 15px;border:0;margin:10px 0px}
+h4.item-header{font-weight:bold;font-size:14px;padding:8px 0px}
+div.item-price{font-size:12px;padding:4px 0px}
+div.item-desc{font-size:12px;margin:8px 0px}
+h4.item-header2{font-weight:bold;font-size:12px;padding:0px 0px}
+div.item-price2{font-size:12px;padding:0px 0px}
+
+
+.item1{
+  background:url(item1.png) center no-repeat;
+  width:200px;
+  height:185px;
+  background-size:200px 185px;
+}
+.item2{
+ 
+  width:100%;
+   
+  height: auto;
+}
+/* Home Page Banner */
+.jumbotron {
+    padding:0 !important;
+    margin:0 !important;
+}
+.jumbotron .container{
+    width:100%;
+    height:500px;
+    background:url(banner.jpg) center no-repeat;
+    background-size:cover;
+}
+.break{clear:both;height:30px;}
+.breakline{clear:both;height:30px;border-bottom: 1px solid #eee;}
+
+/* custom panel */
+.panel-default{border:0;    
+    -webkit-box-shadow: none;
+    box-shadow: none;}
+.panel-gray{
+    border:0;
+    background:#ebebeb;
+}
+
+/* custom modal*/
+.modal-backdrop{background:#fff;opacity:0 !important;}
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+ 
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-body{text-align:center;}
+.modal-body h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight:600;
+    font-size: 24px;
+    margin-top:0;
+    margin-bottom:20px;
+}
+.modal-body input[type='button']{
+    width:200px;
+    border:1px solid #959595;
+    padding:10px 15px;
+    margin:5px;
+    background:#363636;
+    color:#fff;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.modal-body input{
+    width:280px;
+    border:1px solid #959595;
+    padding:10px 20px;
+    margin:5px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  color: #595959;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  color: #595959;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  color: #595959;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  color: #595959;
+}
+.modal-content{
+    background-color: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,1);/* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.4)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.4)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.4));; /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.4));; /* Standard syntax */
+
+    border: 1px solid #b5b5b5;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.modal-header{
+   border:0; 
+}
+/* The Close Button */
+.modal-header .close {
+    
+    float: right;
+    width:20px;
+    height:20px;
+    background:url(close.jpg) center no-repeat;
+    background-size:20px 20px;
+    opacity:1;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+ 
+
+.modal-body {padding: 2px 16px;}
+.navbar-middle a{
+    color:#000;
+}
+
+.navbar-inverse .navbar-toggle{border:0;margin-top:13px;}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{background:none;}
+.navicon, .navicon-button,.navicon:after,.navicon-button .navicon:before, .navicon:after, .navicon:before {
+-webkit-transition:.2s ease-out;
+transition:.2s ease-out;
+}
+	.navicon-button {
+	z-index:999;	 
+    display: inline-block;
+    float: right;
+    position: relative;
+    -webkit-transition-property: background-color;
+    transition-property: background-color;
+    padding: 23px 15px;
+	outline:none;
+}
+.navicon-button:focus{outline:0}
+.navicon {
+    display: block;
+    background: #fff;
+    height: 3px;
+    position: relative;
+    width: 26px;
+    -webkit-transition-property: background;
+    transition-property: background;
+}
+
+
+.navicon:after, .navicon:before {
+    background: #fff;
+    display: block;
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-transition-property: 0;
+    transition-property: transform;
+}
+
+
+
+
+.navicon:before {
+    top: 8px;
+}
+.navicon:after {
+    top: -8px;
+}
+
+
+.header--open {
+overflow-y:auto;
+height:100%;
+z-index:99 !important;
+}
+
+.header--open .navicon {
+background:0 0;
+}
+
+.header--open .navicon:before {
+-webkit-transform:rotate(-45deg);
+-ms-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+.header--open .navicon:after {
+-webkit-transform:rotate(45deg);
+-ms-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+.header--open .menu {
+height:465px;
+}
+
+.header--open:not(.steps) .navicon:after,.header--open:not(.steps) .navicon:before {
+top:0;
+}
+
+@media (max-width: 767px) {
+	.dropdown-menu.multi-column {
+		min-width: 240px !important;
+		overflow-x: hidden;
+	}
+    .cart{width:100%;}
+    .item1{width: 120px;
+    height: 105px;
+    background-size: 120px 105px;}
+    .navbar-nav .open .dropdown-menu{
+        background:#000 !important;
+    }
+}
+
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+    .navbar-middle .navbar-collapse {
+    text-align: left !important;
+}
+    
+}
